@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    background-color: #a7a7a7;
+}
+
+*{
+    z-index: 10;
+}
+canvas{
+     margin: 0; 
+    z-index: 0;
+}  
+.sidebar{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    background: #d7d7d7;
+}
+main .innerPanel{
+    background: #c3c3c3;
+    list-style-type: none;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    overflow: scroll;
+}
+.right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    background: #d7d7d7;
+      -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none; 
+}
+button:focus {
+  text-decoration: none;
+  outline:none;
+  border: none;
+  box-shadow: none;
+}
+button .tool{
+    outline: none;
+    background: #e7e7e7;
+}
+.icon{
+    font-size: 20px;
+}
+.layers{
+    background-color: #777;
+    border: solid 1px #eee;
+}
+.layers button{
+   margin: 10px;
+}
+.layers span{
+    color: #eee;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#newLayerBttn{
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    text-shadow: 1px 1px 3px #666;
+    
+}
+#newLayerBttn i{
+    font-size: 15px;
+}
+#newLayerBttn:active{
+    color: #eee;
+    background-color: #a7a7a7;
+    font-size: 15px;
+    text-shadow: 1px 1px 3px #666;
+    
+}
+
+/* dropdown menu*/
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd}
+
+
+
+/*Icon Classes*/
+
+.layerTools{
+    font-size: 9px;
+    
+}
+
+.activeTool{
+    background-color: #666;
+    border: 1px solid #333;
+}
+.far, .fas{
+   pointer-events: none; 
+
+}
+
+
+
+.currentLayer{
+    background-color: #888;
+    
+}
+
+main input#colorFill{
+    text-align: center;
+    border: none;
+    font-weight: 600;
+}
+
+
+main .scriptArea{
+    border: 1px solid #eee;
+    margin-top: 20px;
+    overflow:auto;
+    background-color: #666;
+    font-family: helvetica;
+    color: white;
+    padding: 10px;
+}
